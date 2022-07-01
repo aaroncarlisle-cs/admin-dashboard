@@ -3,13 +3,17 @@
     grid-template-columns: 1fr;
     gap: 40px;
 
-    &__main {
+    &__header, &__nav, &__main {
+        padding: 40px;
+    }
 
+    &__header {
+        background-color: rgb(23, 9, 109);
     }
     &__nav {
-
+        background-color: rgb(9, 36, 36);
     }
     &__main {
-
+        
     }
 }
