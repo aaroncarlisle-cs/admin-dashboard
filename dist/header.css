@@ -1,0 +1,41 @@
+.header {
+  background-color: rgb(31, 26, 58);
+  padding: 0 2.5rem;
+}
+.header__top-container, .header__bottom-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+.header__search-container, .header__greeting-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: max(300px, 60%);
+}
+.header__message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__alerts-container, .header__btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header__search-input {
+  flex: 1;
+}
+.header__icon--magnifying-glass {
+  font-size: 1.5rem;
+}
+.header__icon--bell {
+  font-size: 1.5rem;
+}
+.header__username--large {
+  margin: 0;
+}
+.header__greeting {
+  margin: 0;
+}/*# sourceMappingURL=header.css.map */
