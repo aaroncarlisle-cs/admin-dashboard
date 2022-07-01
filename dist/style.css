@@ -46,8 +46,8 @@ a, a:visited a:active {
 .grid {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
-  width: min(100% - 2.5rem, 1200px);
+  grid-template-rows: 12.5rem auto;
+  width: min(100% - 2.5rem, 1400px);
   margin-inline: auto;
 }
 .grid .header {
@@ -113,4 +113,52 @@ a, a:visited a:active {
 }
 .nav__icon {
   font-size: 1.5rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  margin: 2.5rem 1.25rem;
+  gap: 1.25rem;
+}
+.main__main-container {
+  display: flex;
+  flex-direction: column;
+}
+.main__title {
+  width: 100%;
+}
+.main__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 1.25rem;
+}
+.main__card {
+  background-color: rgb(48, 22, 3);
+  padding: 2.5rem 1.25rem;
+  border-radius: 0.625rem;
+}
+.main__aside-container {
+  grid-area: 1/2;
+}
+.main__announcements-container, .main__trending-container {
+  background-color: rgb(49, 4, 49);
+  padding: 2.5rem 1.25rem;
+  border-radius: 0.625rem;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+.main__announcement-header {
+  margin-top: 0;
+  margin-bottom: 0.3125rem;
+}
+.main__announcement-body {
+  padding-bottom: 0.3125rem;
+  border-bottom: 1px solid black;
+}
+.main__social {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.25rem;
 }/*# sourceMappingURL=style.css.map */
