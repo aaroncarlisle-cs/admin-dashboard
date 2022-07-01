@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
-    width: min(100% - u.rem(40), 1200px);
+    width: min(100% - u.rem(40), 1400px);
     margin-inline: auto;
     .header {
         grid-area: 1 / 2 / span 1 / span 2;
