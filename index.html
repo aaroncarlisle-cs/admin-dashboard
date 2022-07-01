@@ -13,32 +13,36 @@
 </head>
 <body>
     <div class="grid">
-        <header class="grid__header">
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text">
-            </div>
-            <div class="user-settings">
-                <i class="fa-solid fa-bell fa-2x"></i>
-                <i class="fa-solid fa-face-angry fa-3x"></i>
-                <h3>Darth Nox</h3>
-            </div>
-            <div class="greeting">
-                <div class="avatar">
-                    <i class="fa-solid fa-face-angry fa-5x"></i>                    
+
+        <header class="header">
+                <div class="header__search-container">
+                    <i class="fa-solid fa-magnifying-glass header__icon--magnifying-glass"></i>
+                    <input type="text" class="header__search-input">
+                    <i class="fa-solid fa-bell fa-2x header__icon--bell"></i>
+                    <i class="fa-solid fa-face-angry fa-3x header__avatar--small"></i>
+                    <span class="header__username--small">Darth Nox</span>
                 </div>
-                <div class="greeting-message">
-                    <p>Hi there,</p>
-                    <h1>Darth Nox</h1>
+                <div class="header__welcome-container">
+                    
+                    <div class="header__greeting-container">
+                        <div class="header__avatar-container">
+                            <i class="fa-solid fa-face-angry fa-5x header__avatar--large"></i>
+                        </div>
+                        <div class="header__message-container">
+                            <p class="header__greeting">Hello there,</p>
+                            <h1 class="header__username--large">Darth Nox</h1>
+                        </div>
+                    </div>
+                    <div class="header__btn-container">
+                        <button class="header__btn">New</button>
+                        <button class="header__btn">Upload</button>
+                        <button class="header__btn">Share</button>
+                    </div>
+
                 </div>
-            </div>
-            <div class="user-controls">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
         </header>
-        <nav class="grid__nav">
+
+        <nav class="nav">
             <div class="nav-title">
                 <h1>Dashboard</h1>
             </div>
@@ -56,7 +60,8 @@
                 <li>Privacy</li>
             </ul>
         </nav>
-        <main class="grid__main">
+
+        <main class="main">
             <section class="projects">
                 <header><h3>Your Projects</h3></header>
             </section>
@@ -156,6 +161,7 @@
                 </div>
             </section>
         </main>
+        
     </div>
 </body>
 </html>
