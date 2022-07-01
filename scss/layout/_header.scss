@@ -1,0 +1,50 @@
+@use '../util' as u;
+.header {
+    background-color: rgb(31, 26, 58);
+    padding: 0 u.rem(40);
+    
+    &__top-container, &__bottom-container {
+        display: flex;
+        justify-content: space-around;
+        gap: u.rem(16);
+       margin: u.rem(20) 0;
+    }
+    &__search-container, &__greeting-container {
+        display: flex;
+        align-items: center;
+        gap: u.rem(16);
+        width: max(300px, 60%);
+    }
+    &__message-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__alerts-container, &__btn-container {
+        display: flex;
+        align-items: center;
+        gap: u.rem(16);
+    }
+    &__search-input {
+        flex: 1;
+    }
+    &__icon {
+        &--magnifying-glass {
+            font-size: u.rem(24);
+        }
+        &--bell {
+            font-size: u.rem(24);
+        }
+    }
+    &__username {
+        &--large {
+            margin: 0;
+        }
+    }
+    &__greeting {
+        margin: 0;
+    }
+    &__btn {
+
+    }
+}

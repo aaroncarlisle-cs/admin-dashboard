@@ -1,0 +1,16 @@
+@use '../util' as u;
+.nav {
+    background-color: rgb(9, 36, 36);
+    &__title-container {
+        display: flex;
+        margin: u.rem(20);
+        align-items: center;
+        gap: u.rem(16);
+    }
+    &__title {
+        margin: u.rem(20) auto;
+    }
+    &__icon {
+        font-size: u.rem(24);
+    }
+}
