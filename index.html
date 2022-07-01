@@ -8,9 +8,154 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css">
+    <script src="https://kit.fontawesome.com/b80dae9188.js" crossorigin="anonymous"></script>
     <title>Admin Dashboard</title>
 </head>
 <body>
+    <div class="grid">
+        <header class="grid__header">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text">
+            </div>
+            <div class="user-settings">
+                <i class="fa-solid fa-bell fa-2x"></i>
+                <i class="fa-solid fa-face-angry fa-3x"></i>
+                <h3>Darth Nox</h3>
+            </div>
+            <div class="greeting">
+                <div class="avatar">
+                    <i class="fa-solid fa-face-angry fa-5x"></i>                    
+                </div>
+                <div class="greeting-message">
+                    <p>Hi there,</p>
+                    <h1>Darth Nox</h1>
+                </div>
+            </div>
+            <div class="user-controls">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </header>
+        <nav class="grid__nav">
+            <div class="nav-title">
+                <h1>Dashboard</h1>
+            </div>
+            <ul class="dashboard-main">
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Messages</li>
+                <li>History</li>
+                <li>Tasks</li>
+                <li>Communities</li>
+            </ul>
+            <ul class="dashboard-extra">
+                <li>Settings</li>
+                <li>Support</li>
+                <li>Privacy</li>
+            </ul>
+        </nav>
+        <main class="grid__main">
+            <section class="projects">
+                <header><h3>Your Projects</h3></header>
+            </section>
+            <div class="cards">
+                <div class="card">
+                    <h3>Super Cool Project</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae dignissimos autem facilis cupiditate. Fugiat eos facere error.</p>
+                    <footer>
+                        <i class="fa-solid fa-star fa-2x"></i>
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                        <i class="fa-solid fa-share-nodes fa-2x"></i>
+                    </footer>
+                </div>
+                <div class="card">
+                    <h3>Less Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut reiciendis, eius sint sunt expedita fugiat, quibusdam nobis ratione facilis deleniti at harum!</p>
+                    <footer>
+                        <i class="fa-solid fa-star fa-2x"></i>
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                        <i class="fa-solid fa-share-nodes fa-2x"></i>
+                    </footer>
+                </div>
+                <div class="card">
+                    <h3>Impossible App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed voluptas est quisquam!</p>
+                    <footer>
+                        <i class="fa-solid fa-star fa-2x"></i>
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                        <i class="fa-solid fa-share-nodes fa-2x"></i>
+                    </footer>
+                </div>
+                <div class="card">
+                    <h3>Eassy Peasy App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit veniam cumque temporibus modi ab sint reiciendis in exercitationem nulla accusantium.</p>
+                    <footer>
+                        <i class="fa-solid fa-star fa-2x"></i>
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                        <i class="fa-solid fa-share-nodes fa-2x"></i>
+                    </footer>
+                </div>
+                <div class="card">
+                    <h3>Ad Blocker</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio tempora excepturi quibusdam, veritatis deleniti eum rem accusamus neque, officia eligendi numquam reiciendis.</p>
+                    <footer>
+                        <i class="fa-solid fa-star fa-2x"></i>
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                        <i class="fa-solid fa-share-nodes fa-2x"></i>
+                    </footer>
+                </div>
+                <div class="card">
+                    <h3>Money Maker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod itaque ratione tempore ad ipsa repudiandae!</p>
+                    <footer>
+                        <i class="fa-solid fa-star fa-2x"></i>
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                        <i class="fa-solid fa-share-nodes fa-2x"></i>
+                    </footer>
+                </div>
 
+            </div>
+            <section class="announcements">
+                <header><h3>Announcements</h3>
+                    <div class="panel">
+                        <div class="announcement">
+                            <h4>Site Maintenance</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam, magnam sint eos nostrum veniam doloremque.</p>
+                        </div>
+                        <div class="announcement">
+                            <h4>Community Share Day</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe incidunt ex vero eos consequatur.</p>
+                        </div>
+                        <div class="announcement">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit alias provident!</p>
+                        </div>
+                    </div>
+            </section>
+            <section class="trending">
+                <header><h3>Trending</h3></header>
+                <div class="panel">
+                    <div class="account">
+                        <div class="avatar"></div>
+                        <p><h5>@tegan</h5>World Peace Builder</p>
+                    </div>
+                    <div class="account">
+                        <div class="avatar"></div>
+                        <p><h5>@morgan</h5>Super Cool Project</p>
+                    </div>
+                    <div class="account">
+                        <div class="avatar"></div>
+                        <p><h5>@kendall</h5>Life Changing App</p>
+                    </div>
+                    <div class="account">
+                        <div class="avatar"></div>
+                        <p><h5>@alex</h5>No Traffic Maker</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
