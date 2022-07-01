@@ -1,5 +1,49 @@
 @use '../util' as u;
 .main {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
+    margin: u.rem(40) u.rem(20);
+    gap: u.rem(20);
+    &__main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        width: 100%;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        gap: u.rem(20);
+    }
+    &__card {
+        background-color: rgb(48, 22, 3);
+        padding: u.rem(40) u.rem(20);
+        border-radius: u.rem(10);
+
+    }
+    &__aside-container{
+        grid-area: 1 / 2;
+    }
+    &__announcements-container, &__trending-container {
+        background-color: rgb(49, 4, 49);
+        padding: u.rem(40) u.rem(20);
+        border-radius: u.rem(10);
+        width: 100%;
+        margin-bottom: u.rem(20);
+    }
+    &__announcement-header {
+        margin-top: 0;
+        margin-bottom: u.rem(5);
+    }
+    &__announcement-body {
+        padding-bottom: u.rem(5);
+        border-bottom: 1px solid black;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: u.rem(20);
+    }
 }
