@@ -1,1 +1,116 @@
-html{box-sizing:border-box;font-size:100%}*,*::before,*::after{box-sizing:inherit}body{margin:0;padding:0;font-family:"Nunito",sans-serif;background-color:var(--background-color);color:var(--text-color)}h1,h2,h3{font-weight:700;line-height:1.1;margin-top:0}p{margin-top:0}a,a:visited a:active{text-decoration:none}:root{--background-color: hsl(0, 0%, 11%);--text-color: hsl(0, 0%, 100%)}.grid{display:grid;grid-template-columns:1fr;gap:40px}.grid__header,.grid__nav,.grid__main{padding:40px}.grid__header{background-color:#17096d}.grid__nav{background-color:#092424}/*# sourceMappingURL=style.css.map */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.375rem, 0.875rem + 1.5vw, 2.25rem);
+}
+
+p {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+a, a:visited a:active {
+  text-decoration: none;
+}
+
+:root {
+  --background-color: hsl(0, 0%, 11%);
+  --text-color: hsl(0, 0%, 100%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  width: min(100% - 2.5rem, 1200px);
+  margin-inline: auto;
+}
+.grid .header {
+  grid-area: 1/2/span 1/span 2;
+  height: 12.5rem;
+}
+.grid .nav {
+  grid-area: 1/1/span 2/span 1;
+}
+
+.header {
+  background-color: rgb(31, 26, 58);
+  padding: 0 2.5rem;
+}
+.header__top-container, .header__bottom-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+.header__search-container, .header__greeting-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: max(300px, 60%);
+}
+.header__message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__alerts-container, .header__btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header__search-input {
+  flex: 1;
+}
+.header__icon--magnifying-glass {
+  font-size: 1.5rem;
+}
+.header__icon--bell {
+  font-size: 1.5rem;
+}
+.header__username--large {
+  margin: 0;
+}
+.header__greeting {
+  margin: 0;
+}
+.nav {
+  background-color: rgb(9, 36, 36);
+}
+.nav__title-container {
+  display: flex;
+  margin: 1.25rem;
+  align-items: center;
+  gap: 1rem;
+}
+.nav__title {
+  margin: 1.25rem auto;
+}
+.nav__icon {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
