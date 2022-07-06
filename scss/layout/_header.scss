@@ -1,10 +1,59 @@
 @use '../util' as u;
 .header {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.5 1 0.5 0.5 0.5;
+    grid-template-areas: 
+        "menu greeting greeting alert"
+        "avatar avatar avatar avatar"
+        "name name name name"
+        "search search search search"
+        "buttons buttons buttons buttons";
+    gap: 16px;
     background-color: rgb(31, 26, 58);
-    padding: u.rem(40) u.rem(40);
-    &__avatar--small, &__username--small {
+    padding: u.rem(40);
+    &__avatar--small, &__username--small, &__icon--magnifying-glass {
         display: none;
+    }
+    &__icon--hamburger {
+        grid-area: menu;
+        justify-self: start;
+    }
+    &__greeting {
+        grid-area: greeting;
+        justify-self: center;
+    }
+    &__icon--bell {
+        grid-area: alert;
+        justify-self: end;
+    }
+    &__avatar--large {
+        grid-area: avatar;
+        justify-self: center;
+    }
+    &__username--large {
+        grid-area: name;
+        justify-self: center;
+    }
+    &__icon--magnifying-glass {
+        grid-area: search-icon;
+    }
+    &__search-input {
+        grid-area: search;
+    }
+    &__btn-container {
+        grid-area: buttons;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    &__btn {
+        padding: 8px 16px;
+        width: 80px;
+        border-radius: 10px;
+        border: 1px solid white;
     }
 }
 

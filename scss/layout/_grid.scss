@@ -2,11 +2,8 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: u.rem(200) auto;
-    width: min(100% - u.rem(40), 1400px);
     margin-inline: auto;
     .header {
-        
 
     }
     .nav {
