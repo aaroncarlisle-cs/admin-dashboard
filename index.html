@@ -9,15 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css">
     <script src="https://kit.fontawesome.com/b80dae9188.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js" defer></script>
     <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="grid">
         <header class="header">
                 <i class="fa-solid fa-magnifying-glass header__icon--magnifying-glass fa-1x"></i>
-                <i class="fa-solid fa-bars fa-1x header__icon--hamburger"></i>
+                <button id="menu-open-button"><i class="fa-solid fa-bars fa-1x header__icon--hamburger fa-2x"></i></button>
                 <input type="text" class="header__search-input">
-                <i class="fa-solid fa-bell fa-1x header__icon--bell"></i>
+                <i class="fa-solid fa-bell fa-1x header__icon--bell fa-2x"></i>
                 <i class="fa-solid fa-face-angry fa-3x header__avatar--small"></i>
                 <span class="header__username--small">Darth Nox</span>
                 <i class="fa-solid fa-face-angry fa-6x header__avatar--large"></i>
@@ -30,25 +31,27 @@
                 </div>
         </header>
 
-        <nav class="nav">
-            <div class="nav__title-container">
-                <i class="fa-solid fa-ellipsis-vertical nav__icon"></i>
-                <h1 class="nav__title">Dashboard</h1>
-            </div>
-            <ul class="nav__main-menu">
-                <li class="nav__menu-item">Home</li>
-                <li class="nav__menu-item">Profile</li>
-                <li class="nav__menu-item">Messages</li>
-                <li class="nav__menu-item">History</li>
-                <li class="nav__menu-item">Tasks</li>
-                <li class="nav__menu-item">Communities</li>
-            </ul>
-            <ul class="nav__alt menu">
-                <li class="nav__menu-item">Settings</li>
-                <li class="nav__menu-item">Support</li>
-                <li class="nav__menu-item">Privacy</li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <nav class="nav">
+                <div class="nav__title-container">
+                    <h1 class="nav__title">Dashboard</h1>
+                    <button id="menu-close-button"><i class="fa-solid fa-x nav__icon--x"></i></button>
+                </div>
+                <ul class="nav__main-menu">
+                    <li class="nav__menu-item">Home</li>
+                    <li class="nav__menu-item">Profile</li>
+                    <li class="nav__menu-item">Messages</li>
+                    <li class="nav__menu-item">History</li>
+                    <li class="nav__menu-item">Tasks</li>
+                    <li class="nav__menu-item">Communities</li>
+                </ul>
+                <ul class="nav__alt menu">
+                    <li class="nav__menu-item">Settings</li>
+                    <li class="nav__menu-item">Support</li>
+                    <li class="nav__menu-item">Privacy</li>
+                </ul>
+            </nav>
+        </div>
 
         <main class="main">
             <div class="main__main-container">
