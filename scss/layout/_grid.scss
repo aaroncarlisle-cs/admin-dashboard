@@ -1,16 +1,16 @@
 @use '../util' as u;
 .grid {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
     grid-template-rows: u.rem(200) auto;
     width: min(100% - u.rem(40), 1400px);
     margin-inline: auto;
     .header {
-        grid-area: 1 / 2 / span 1 / span 2;
-        height: u.rem(200);
+        
+
     }
     .nav {
-        grid-area: 1 / 1 / span 2 / span 1;
+
     }
 }    
 
