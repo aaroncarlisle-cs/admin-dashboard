@@ -15,6 +15,11 @@
     &__avatar--small, &__username--small, &__icon--magnifying-glass {
         display: none;
     }
+    #menu-open-button {
+        background-color: rgb(31, 26, 58);
+        border: 0;
+        color: white;
+    }
     &__icon--hamburger {
         grid-area: menu;
         justify-self: start;

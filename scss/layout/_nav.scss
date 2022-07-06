@@ -9,6 +9,7 @@
     top: 0;
     height: 100%;
     width: 100%;
+    display: none;
     .nav {
         background-color: rgb(9, 36, 36);
         height: 100%;
@@ -20,6 +21,11 @@
         }
         &__title {
             margin: 0;
+        }
+        #menu-close-button {
+            border: 0;
+            background-color: rgb(9, 36, 36);
+            color: white;
         }
         &__icon--x {
             transform: scale(2);
