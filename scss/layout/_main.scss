@@ -3,58 +3,86 @@
     display: flex;
     flex-direction: column;
     padding: 40px;
-    gap: u.rem(20);
     &__main-container {
         display: flex;
         flex-direction: column;
     }
     &__title {
         width: 100%;
+        margin-bottom: 40px;
+        font-size: clamp(16px, 1.5rem, 32px);
     }
     &__cards {
         display: flex;
-        gap: 16px;
+        gap: 20px;
         flex-direction: column;
+        margin-bottom: 40px;
         // display: grid;
         // grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
         // gap: u.rem(20);
     }
     &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
         background-color: rgb(48, 22, 3);
         padding: 40px;
         border-radius: 10px;
+        h3 {
+            font-size: clamp(16px, 1.5rem, 24px);
+            margin: 0;
+        }
         p {
-            margin-bottom: 40px;
+            font-size: clamp(16px, 1rem, 24px);
+            margin: 0;
         }
         footer {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            width: 100%;
             font-size: clamp(0.5rem, 0.8rem, 20px);
-            .fa-star, .fa-eye, .fa-share {
-                padding-right: 16px;
-            }
         }
     }
     &__aside-container{
-        // grid-area: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__aside-header {
+        font-size: clamp(16px, 1.5rem, 24px);
+        margin: 0;
     }
     &__announcements-container, &__trending-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
         background-color: rgb(49, 4, 49);
-        padding: u.rem(40) u.rem(20);
+        padding: 40px;
         border-radius: u.rem(10);
         width: 100%;
-        margin-bottom: u.rem(20);
+        margin-bottom: 0px;
     }
     &__announcement-header {
-        margin-top: 0;
-        margin-bottom: u.rem(5);
+        margin: 0;
+        font-size: clamp(16px, 1.5rem, 24px);
     }
     &__announcement-body {
-        padding-bottom: u.rem(5);
+        margin: 0;
+        padding-bottom: 20px;
         border-bottom: 1px solid black;
     }
     &__social {
         display: flex;
-        align-items: center;
         flex-direction: row;
-        gap: u.rem(20);
+        align-items: center;
+        gap: 20px;
+    }
+    &__social-container { 
+        display: flex;
+        flex-direction: column;
+    }
+    &__social-handle, &__social-title {
+        margin: 0;
     }
 }
