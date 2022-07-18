@@ -1,8 +1,8 @@
 @use '../util' as u;
 .main {
-    display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    margin: u.rem(40) u.rem(20);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
     gap: u.rem(20);
     &__main-container {
         display: flex;
@@ -12,18 +12,29 @@
         width: 100%;
     }
     &__cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-        gap: u.rem(20);
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        // gap: u.rem(20);
     }
     &__card {
         background-color: rgb(48, 22, 3);
-        padding: u.rem(40) u.rem(20);
-        border-radius: u.rem(10);
-
+        padding: 40px;
+        border-radius: 10px;
+        p {
+            margin-bottom: 40px;
+        }
+        footer {
+            font-size: clamp(0.5rem, 0.8rem, 20px);
+            .fa-star, .fa-eye, .fa-share {
+                padding-right: 16px;
+            }
+        }
     }
     &__aside-container{
-        grid-area: 1 / 2;
+        // grid-area: 1 / 2;
     }
     &__announcements-container, &__trending-container {
         background-color: rgb(49, 4, 49);
