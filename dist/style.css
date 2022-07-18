@@ -47,7 +47,9 @@ a, a:visited a:active {
   display: grid;
   grid-template-columns: 1fr;
   margin-inline: auto;
+  justify-content: center;
 }
+
 .header {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
@@ -55,7 +57,7 @@ a, a:visited a:active {
   grid-template-areas: "menu greeting greeting alert" "avatar avatar avatar avatar" "name name name name" "search search search search" "buttons buttons buttons buttons";
   gap: 16px;
   background-color: rgb(31, 26, 58);
-  padding: 2.5rem;
+  padding: 40px;
 }
 .header__avatar--small, .header__username--small, .header__icon--magnifying-glass {
   display: none;
@@ -100,6 +102,8 @@ a, a:visited a:active {
   width: 100%;
 }
 .header__btn {
+  display: flex;
+  justify-content: center;
   padding: 8px 16px;
   width: 80px;
   border-radius: 10px;
@@ -144,10 +148,9 @@ a, a:visited a:active {
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  margin: 2.5rem 1.25rem;
-  gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
 }
 .main__main-container {
   display: flex;
@@ -155,38 +158,76 @@ a, a:visited a:active {
 }
 .main__title {
   width: 100%;
+  margin-bottom: 40px;
+  font-size: clamp(16px, 1.5rem, 32px);
 }
 .main__cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-  gap: 1.25rem;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 .main__card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   background-color: rgb(48, 22, 3);
-  padding: 2.5rem 1.25rem;
-  border-radius: 0.625rem;
+  padding: 40px;
+  border-radius: 10px;
+}
+.main__card h3 {
+  font-size: clamp(16px, 1.5rem, 24px);
+  margin: 0;
+}
+.main__card p {
+  font-size: clamp(16px, 1rem, 24px);
+  margin: 0;
+}
+.main__card footer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  font-size: clamp(0.5rem, 0.8rem, 20px);
 }
 .main__aside-container {
-  grid-area: 1/2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.main__aside-header {
+  font-size: clamp(16px, 1.5rem, 24px);
+  margin: 0;
 }
 .main__announcements-container, .main__trending-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   background-color: rgb(49, 4, 49);
-  padding: 2.5rem 1.25rem;
+  padding: 40px;
   border-radius: 0.625rem;
   width: 100%;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0px;
 }
 .main__announcement-header {
-  margin-top: 0;
-  margin-bottom: 0.3125rem;
+  margin: 0;
+  font-size: clamp(16px, 1.5rem, 24px);
 }
 .main__announcement-body {
-  padding-bottom: 0.3125rem;
+  margin: 0;
+  padding-bottom: 20px;
   border-bottom: 1px solid black;
 }
 .main__social {
   display: flex;
-  align-items: center;
   flex-direction: row;
-  gap: 1.25rem;
+  align-items: center;
+  gap: 20px;
+}
+.main__social-container {
+  display: flex;
+  flex-direction: column;
+}
+.main__social-handle, .main__social-title {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
