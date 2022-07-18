@@ -63,6 +63,21 @@
         border: 1px solid white;
     }
 }
+@media screen and (min-width: 768px){
+    .header {
+        grid-template-columns: 1fr 0.25fr;
+        grid-template-rows: 0.8fr 1fr;
+        grid-template-areas: 
+            "search settings"
+            "greeting buttons";
+        &__avatar--small, &__username--small, &__icon--magnifying-glass {
+            display: block;
+        }
+        &__icon--hamburger {
+            display: none;
+        }
+    }
+}
 
 // .header {
 //     background-color: rgb(31, 26, 58);
