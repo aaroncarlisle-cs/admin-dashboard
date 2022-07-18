@@ -5,7 +5,40 @@
     margin-inline: auto;
     justify-content: center;
 }    
-
+@media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: 0.25fr 1fr;
+        grid-template-rows: 0.125fr 1fr 1fr;
+        grid-template-areas: 
+            "nav header"
+            "nav main"
+            "nav main";
+        .header {
+            grid-area: header;
+        }
+        .nav-container {
+            grid-area: nav;
+        }
+        .main {
+            grid-area: main;
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            &__aside-container {
+                max-width: 30%;
+                flex-shrink: 0;
+            }
+            &__main-container {
+                flex: 1;
+            }
+            &__cards {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+        }
+    }
+}
     // .header, .nav, .main {
     //     padding: 40px;
     // }
